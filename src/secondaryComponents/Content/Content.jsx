@@ -14,7 +14,10 @@ const Content = () => {
             </div>
             <div>Link</div>
         </div>
-        <div className='content__socials'>Socials</div>
+        <div className='content__socials'>
+            <img src={icons.slack} alt="slack-icon" />
+            <img src={icons.github} alt="github-icon" />
+        </div>
     </div>
   )
 }

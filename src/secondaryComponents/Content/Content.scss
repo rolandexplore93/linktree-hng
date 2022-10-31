@@ -31,4 +31,12 @@
             right: 240px;
         }
     }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding: 24px;
+    }
 }
