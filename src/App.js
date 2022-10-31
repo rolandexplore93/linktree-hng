@@ -1,9 +1,12 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import Main from './layout/Main/Main';
 
 function App() {
   return (
-    <div className='App'>App</div>
+    <div className='App'>
+      <Main />
+    </div>
   )
 }
 
