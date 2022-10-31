@@ -1,0 +1,11 @@
+.btn {
+    background-color: rgba(234, 236, 240, 1);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+
+    &__link {
+        text-decoration: none;
+        color: #000;
+    }
+}
