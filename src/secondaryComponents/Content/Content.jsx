@@ -2,6 +2,7 @@ import './Content.scss';
 import icons from '../../assets/icons';
 import images from '../../assets/images';
 import primaryComponents from '../../primaryComponents';
+// import ReactTooltip from 'react-tooltip';
 
 const Content = () => {
 
@@ -13,7 +14,9 @@ const Content = () => {
                 <p className='content__profile-name twitter' id='twitter'>oga_rolly</p>
                 <p className='content__profile-name slack' id='slack'>rollyJS</p>
                 <img className='content__profile-share-icon' src={icons.avatarIcon} alt="profile-share-icon" />
+                <img className='content__profile-mobile-icon' src={icons.avatarIconMobile} alt="profile-share-icon" />
             </div>
+            
             <div className='profile-links'>
                 <primaryComponents.ProfileLink 
                     title={'Twitter Link'} 
@@ -28,21 +31,33 @@ const Content = () => {
                     title={'Zuri Books'} 
                     link={'http://books.zuri.team'}
                     id={'books'}
+                    dataTip='description'
+                    toolTipLinks='zuri-books'
+                    toolTipSubtext={'You will find books about design and coding here'}
                 />
                 <primaryComponents.ProfileLink 
                     title={'Python Books'} 
                     link={'https://books.zuri.team/python-for-beginners?ref_id=rollyJS'}
                     id={'book__python'}
+                    dataTip='description'
+                    toolTipLinks='book__python'
+                    toolTipSubtext={'Grab a copy for python-for-beginners'}
                 />
                 <primaryComponents.ProfileLink 
                     title={'Background Check for Coders'} 
                     link={'https://background.zuri.team'}
                     id={'pitch'}
+                    dataTip='description'
+                    toolTipLinks='pitch'
+                    toolTipSubtext={'Carry out background checks on the developer'}
                 />
                 <primaryComponents.ProfileLink 
                     title={'Design Books'} 
                     link={'https://books.zuri.team/design-rules'}
                     id={'book__design'}
+                    dataTip='description'
+                    toolTipLinks='book__design'
+                    toolTipSubtext={'Get a design book for free'}
                 />
             </div>
         </div>

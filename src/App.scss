@@ -10,17 +10,9 @@
   isolation: isolate;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-}
-
-.App {
-  // text-align: center;
 }
 
 img, picture, video, canvas, svg {

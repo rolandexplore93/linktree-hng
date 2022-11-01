@@ -1,6 +1,10 @@
 .content {
     margin: 64px 112px;
 
+    @media screen and (max-width: 850px) {
+        margin: 64px 16px 32px;
+    }
+
     &__profile {
         padding: 0 32px;
 
@@ -33,6 +37,21 @@
             top: -25px;
             right: 240px;
             cursor: pointer;
+
+            @media screen and (max-width: 850px) {
+                display: none;
+            }
+        }
+
+        &-mobile-icon {
+            display: none;
+
+            @media screen and (max-width: 850px) {
+                display: block;
+                position: absolute;
+                top: -25px;
+                right: 0;
+            }
         }
     }
 
@@ -41,6 +60,10 @@
         flex-direction: column;
         gap: 24px;
         margin: 56px 0 24px 0;
+
+        @media screen and (max-width: 850px) {
+            margin-top: 32px;
+        }
     }
 
     &__socials {
