@@ -2,7 +2,6 @@ import './Content.scss';
 import icons from '../../assets/icons';
 import images from '../../assets/images';
 import primaryComponents from '../../primaryComponents';
-// import ReactTooltip from 'react-tooltip';
 
 const Content = () => {
 
@@ -10,7 +9,7 @@ const Content = () => {
     <div className='content'>
         <div className='content__profile'>
             <div className='content__profile-details'>
-                <img className='content__profile-pic' id='profile__img' src={images.profileImage} alt="profile-pic" />
+                <img className='content__profile-pic' id='profile__img' src={images.profileImage2} alt="profile-pic" />
                 <p className='content__profile-name twitter' id='twitter'>oga_rolly</p>
                 <p className='content__profile-name slack' id='slack'>rollyJS</p>
                 <img className='content__profile-share-icon' src={icons.avatarIcon} alt="profile-share-icon" />
