@@ -16,29 +16,29 @@ const ContactMe = () => {
                             <div className='contact__firstname'>
                                 <label htmlFor="first_name">First name</label>
                                 <input type={'text'} name='first_name' id='first_name' placeholder='Enter your first name' required />
-                                <p id='validation-error'>error message</p>
+                                <p id='validation-error'>Please enter a message</p>
                             </div>
                             <div className='contact__lastname'>
                                 <label htmlFor="last_name">Last name</label>
                                 <input type={'text'} name='last_name' id='last_name' placeholder='Enter your last name' required />
-                                <p id='validation-error'>error message</p>
+                                <p id='validation-error'>Please enter a message</p>
                             </div>
                         </div>
                         <div className='contact__email'>
                             <label htmlFor="email">Email</label>
                             <input type={'email'} name='email' id='email' placeholder='yourname@email.com' required />
-                            <p id='validation-error'>error message</p>
+                            <p id='validation-error'>Please enter a message</p>
                         </div>
                         <div className='contact__message'>
                             <label htmlFor="message">Message</label>
                             <textarea className='message' name="message" id="message" cols="20" rows="5" placeholder={`Send me a message and I'll reply you as soon as possible...`} style={{ width: '100%' }} required ></textarea>
+                            <p id='validation-error'>Please enter a message</p>
 
                         </div>
                         <div className='contact__check'>
                             <input type={'checkbox'} name='check' id='check' />
                             <label htmlFor="check">You agree to providing your data to 'name' who may contact you.</label>
                         </div>
-                            {/* <span id='validation-error'>error text</span> */}
                         <button id='btn__submit'>Send message</button>
                     </form>
 

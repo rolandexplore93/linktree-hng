@@ -1,18 +1,27 @@
 .contact {
     padding: 64px 80px;
 
+    @media screen and (max-width: 1000px) {
+        padding: 64px 16px 32px;
+    }
+
     &__container {
         padding: 0 32px;
-        // background-color: red;
+
+        @media screen and (max-width: 1000px) {
+            padding: 0;
+        }
     }
 
     &__content-wrapper {
         padding: 92px 248px;
-        // background-color: antiquewhite;
+
+        @media screen and (max-width: 1000px) {
+            padding: 0;
+        }
     }
 
     &__content {
-        // background: #fff;
 
         &-header {
             display: flex;
@@ -46,15 +55,49 @@
         padding: 10px 14px;
     }
 
+    input[type="text"] {
+        width: 100%;
+    }
+
     label {
         margin-bottom: 6px;
+        color: #344054;
+        font-size: 20px;
     }
+
+    input[type="text"],
+        input[type="email"],
+        textarea {
+            
+            outline: none;
+            transition: all 0.3s ease-in-out;
+            & + #validation-error {
+                color: red;
+                display: none;
+            }
+
+            &:focus:invalid {
+                border: 1px solid rgba(248, 150, 135, 1);
+                box-shadow: 0 0 10px rgba(248, 150, 135, 1); & + #validation-error {
+                    display: inline;
+                }
+            }
+
+            &:focus:valid {
+                box-shadow: 0 0 10px rgba(81, 203, 238, 1);
+                border: 1px solid rgba(81, 203, 238, 1);
+            }
+        }
 
     &__details {
         display: flex;
         min-width: 100%;
         margin-bottom: 24px;
         gap: 24px;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+        }
     }
 
     &__firstname, &__lastname {
@@ -69,10 +112,6 @@
         display: flex;
         flex-direction: column;
     }
-
-    // &__message {
-
-    // }
 
     &__check {
         min-width: 100%;
