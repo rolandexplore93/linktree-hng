@@ -37,7 +37,7 @@ const ContactMe = () => {
                         </div>
                         <div className='contact__check'>
                             <input type={'checkbox'} name='check' id='check' />
-                            <label htmlFor="check">You agree to providing your data to 'name' who may contact you</label>
+                            <label htmlFor="check">You agree to providing your data to 'name' who may contact you.</label>
                         </div>
                         <button id='btn__submit'>Send message</button>
                     </form>
