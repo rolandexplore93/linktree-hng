@@ -1,4 +1,4 @@
-import React from 'react';
+import './Main.scss';
 import secondaryComponents from '../../secondaryComponents/secondaryComponents';
 
 const Main = () => {

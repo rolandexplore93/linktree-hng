@@ -58,6 +58,14 @@ const Content = () => {
                     toolTipLinks='book__design'
                     toolTipSubtext={'Get a design book for free'}
                 />
+                <primaryComponents.ProfileLink 
+                    title={'Contact Me'} 
+                    link={'/contact'}
+                    id={'contact'}
+                    dataTip='description'
+                    toolTipLinks='contact-me'
+                    toolTipSubtext={'Click here to contact me'}
+                />
             </div>
         </div>
         <div className='content__socials'>

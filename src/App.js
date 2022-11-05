@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.scss';
-import Main from './layout/Main/Main';
+import { BrowserRouter } from 'react-router-dom';
+import AnimatedRoutes from './AnimatedRoutes';
+import layouts from './layout';
 
 function App() {
   return (
-    <div className='App'>
-      <Main />
-    </div>
+    <BrowserRouter>
+        <AnimatedRoutes />
+    </BrowserRouter>
   )
 }
 
