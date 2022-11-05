@@ -1,8 +1,9 @@
 .content {
     margin: 64px 112px;
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 1000px) {
         padding: 64px 16px 32px;
+        margin: 64px 16px;
     }
 
     &__profile {
